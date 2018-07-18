@@ -10,6 +10,7 @@
   "scripts": {
     "postcss:watch": "postcss src/index.pcss -o src/index.css --watch",
     "parcel:serve": "parcel src/index.html",
+    "parcel:watch": "parcel watch src/index.html",
     "parcel:build": "parcel build src/index.html",
     "start": "rm -rf dist .cache && run-p postcss:watch parcel:serve"
   },
