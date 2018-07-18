@@ -1,15 +1,26 @@
 {
-  "name": "parcel-tailwindcss",
+  "name": "tailwindcss-parcel-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacknug/tailwindcss-parcel-boilerplate.git"
+  },
   "scripts": {
     "postcss:watch": "postcss src/index.pcss -o src/index.css --watch",
     "parcel:serve": "parcel src/index.html",
+    "parcel:build": "parcel build src/index.html",
     "start": "rm -rf dist .cache && run-p postcss:watch parcel:serve"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "tailwind css",
+    "parcel",
+    "postcss"
+  ],
+  "author": "Nestor Vera <nestorvera@me.com> (https://nestor.rip)",
   "license": "ISC",
   "dependencies": {
     "parcel-bundler": "^1.9.7"
