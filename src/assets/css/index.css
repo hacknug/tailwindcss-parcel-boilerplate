@@ -10,20 +10,18 @@
  * @import "tailwindcss/preflight";
  */
 
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
 html {
   line-height: 1.15; /* 1 */
-      -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -31,24 +29,11 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers (opinionated).
+ * Remove the margin in all browsers.
  */
 
 body {
   margin: 0;
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
 }
 
 /**
@@ -63,26 +48,6 @@ h1 {
 
 /* Grouping content
    ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
-}
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -109,33 +74,23 @@ pre {
    ========================================================================== */
 
 /**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * Remove the gray background on active links in IE 10.
  */
 
 a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
+  background-color: transparent;
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
-strong {
-  font-weight: inherit;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -157,23 +112,6 @@ kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-  background-color: #ff0;
-  color: #000;
 }
 
 /**
@@ -209,44 +147,18 @@ sup {
    ========================================================================== */
 
 /**
- * Add the correct display in IE 9-.
- */
-
-audio,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
+ * Remove the border on images inside links in IE 10.
  */
 
 img {
   border-style: none;
 }
 
-/**
- * Hide the overflow in IE.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
 /* Forms
    ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers (opinionated).
+ * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 
@@ -255,7 +167,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
+  font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
@@ -284,17 +196,14 @@ select {
 }
 
 /**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
+ * Correct the inability to style clickable types in iOS and Safari.
  */
 
 button,
-html [type="button"],
-/* 1 */
+[type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+  -webkit-appearance: button;
 }
 
 /**
@@ -345,17 +254,15 @@ legend {
 }
 
 /**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
 progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE.
+ * Remove the default vertical scrollbar in IE 10+.
  */
 
 textarea {
@@ -363,8 +270,8 @@ textarea {
 }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
  */
 
 [type="checkbox"],
@@ -393,10 +300,9 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -415,13 +321,10 @@ textarea {
    ========================================================================== */
 
 /*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
+ * Add the correct display in Edge, IE 10+, and Firefox.
  */
 
-details,
-/* 1 */
-menu {
+details {
   display: block;
 }
 
@@ -433,30 +336,19 @@ summary {
   display: list-item;
 }
 
-/* Scripting
+/* Misc
    ========================================================================== */
 
 /**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
+ * Add the correct display in IE 10+.
  */
 
 template {
   display: none;
 }
 
-/* Hidden
-   ========================================================================== */
-
 /**
- * Add the correct display in IE 10-.
+ * Add the correct display in IE 10.
  */
 
 [hidden] {
@@ -572,19 +464,6 @@ img {
   border-style: solid;
 }
 
-/**
- * Temporary reset for a change introduced in Chrome 62 but now reverted.
- *
- * We can remove this when the reversion is in a normal Chrome release.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  border-radius: 0;
-}
-
 textarea {
   resize: vertical;
 }
@@ -592,14 +471,6 @@ textarea {
 img {
   max-width: 100%;
   height: auto;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
 }
 
 input::-webkit-input-placeholder,
@@ -614,6 +485,12 @@ textarea:-ms-input-placeholder {
   opacity: .5;
 }
 
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: inherit;
@@ -621,7 +498,7 @@ textarea::placeholder {
 }
 
 button,
-[role=button] {
+[role="button"] {
   cursor: pointer;
 }
 
@@ -2906,191 +2783,151 @@ table {
 }
 
 .flex {
-  display: -ms-flexbox;
   display: flex;
 }
 
 .inline-flex {
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .flex-row {
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-row-reverse {
-  -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .flex-col {
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-col-reverse {
-  -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .flex-wrap-reverse {
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 .flex-no-wrap {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .items-start {
-  -ms-flex-align: start;
-      align-items: flex-start;
+  align-items: flex-start;
 }
 
 .items-end {
-  -ms-flex-align: end;
-      align-items: flex-end;
+  align-items: flex-end;
 }
 
 .items-center {
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .items-baseline {
-  -ms-flex-align: baseline;
-      align-items: baseline;
+  align-items: baseline;
 }
 
 .items-stretch {
-  -ms-flex-align: stretch;
-      align-items: stretch;
+  align-items: stretch;
 }
 
 .self-auto {
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  align-self: auto;
 }
 
 .self-start {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .self-end {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .self-center {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .self-stretch {
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .justify-start {
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-end {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .justify-center {
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
 }
 
 .justify-between {
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-around {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .content-center {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .content-start {
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
 }
 
 .content-end {
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;
 }
 
 .content-between {
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  align-content: space-between;
 }
 
 .content-around {
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  align-content: space-around;
 }
 
 .flex-1 {
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1 1 0%;
 }
 
 .flex-auto {
-  -ms-flex: auto;
-      flex: auto;
+  flex: 1 1 auto;
 }
 
 .flex-initial {
-  -ms-flex: initial;
-      flex: initial;
+  flex: 0 1 auto;
 }
 
 .flex-none {
-  -ms-flex: none;
-      flex: none;
+  flex: none;
 }
 
 .flex-grow {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
 }
 
 .flex-shrink {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
 }
 
 .flex-no-grow {
-  -ms-flex-positive: 0;
-      flex-grow: 0;
+  flex-grow: 0;
 }
 
 .flex-no-shrink {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .float-right {
@@ -8550,191 +8387,151 @@ table {
   }
 
   .sm\:flex {
-    display: -ms-flexbox;
     display: flex;
   }
 
   .sm\:inline-flex {
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 
   .sm\:flex-row {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
 
   .sm\:flex-row-reverse {
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   .sm\:flex-col {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
 
   .sm\:flex-col-reverse {
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .sm\:flex-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .sm\:flex-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
 
   .sm\:flex-no-wrap {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .sm\:items-start {
-    -ms-flex-align: start;
-        align-items: flex-start;
+    align-items: flex-start;
   }
 
   .sm\:items-end {
-    -ms-flex-align: end;
-        align-items: flex-end;
+    align-items: flex-end;
   }
 
   .sm\:items-center {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
 
   .sm\:items-baseline {
-    -ms-flex-align: baseline;
-        align-items: baseline;
+    align-items: baseline;
   }
 
   .sm\:items-stretch {
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    align-items: stretch;
   }
 
   .sm\:self-auto {
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    align-self: auto;
   }
 
   .sm\:self-start {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 
   .sm\:self-end {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
 
   .sm\:self-center {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .sm\:self-stretch {
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .sm\:justify-start {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .sm\:justify-end {
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .sm\:justify-center {
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
 
   .sm\:justify-between {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
 
   .sm\:justify-around {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   .sm\:content-center {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
 
   .sm\:content-start {
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
   }
 
   .sm\:content-end {
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
 
   .sm\:content-between {
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    align-content: space-between;
   }
 
   .sm\:content-around {
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
 
   .sm\:flex-1 {
-    -ms-flex: 1;
-        flex: 1;
+    flex: 1 1 0%;
   }
 
   .sm\:flex-auto {
-    -ms-flex: auto;
-        flex: auto;
+    flex: 1 1 auto;
   }
 
   .sm\:flex-initial {
-    -ms-flex: initial;
-        flex: initial;
+    flex: 0 1 auto;
   }
 
   .sm\:flex-none {
-    -ms-flex: none;
-        flex: none;
+    flex: none;
   }
 
   .sm\:flex-grow {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    flex-grow: 1;
   }
 
   .sm\:flex-shrink {
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
   }
 
   .sm\:flex-no-grow {
-    -ms-flex-positive: 0;
-        flex-grow: 0;
+    flex-grow: 0;
   }
 
   .sm\:flex-no-shrink {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
 
   .sm\:float-right {
@@ -14164,191 +13961,151 @@ table {
   }
 
   .md\:flex {
-    display: -ms-flexbox;
     display: flex;
   }
 
   .md\:inline-flex {
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 
   .md\:flex-row {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
 
   .md\:flex-row-reverse {
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   .md\:flex-col {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
 
   .md\:flex-col-reverse {
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .md\:flex-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .md\:flex-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
 
   .md\:flex-no-wrap {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .md\:items-start {
-    -ms-flex-align: start;
-        align-items: flex-start;
+    align-items: flex-start;
   }
 
   .md\:items-end {
-    -ms-flex-align: end;
-        align-items: flex-end;
+    align-items: flex-end;
   }
 
   .md\:items-center {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
 
   .md\:items-baseline {
-    -ms-flex-align: baseline;
-        align-items: baseline;
+    align-items: baseline;
   }
 
   .md\:items-stretch {
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    align-items: stretch;
   }
 
   .md\:self-auto {
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    align-self: auto;
   }
 
   .md\:self-start {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 
   .md\:self-end {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
 
   .md\:self-center {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .md\:self-stretch {
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .md\:justify-start {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .md\:justify-end {
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .md\:justify-center {
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
 
   .md\:justify-between {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
 
   .md\:justify-around {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   .md\:content-center {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
 
   .md\:content-start {
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
   }
 
   .md\:content-end {
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
 
   .md\:content-between {
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    align-content: space-between;
   }
 
   .md\:content-around {
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
 
   .md\:flex-1 {
-    -ms-flex: 1;
-        flex: 1;
+    flex: 1 1 0%;
   }
 
   .md\:flex-auto {
-    -ms-flex: auto;
-        flex: auto;
+    flex: 1 1 auto;
   }
 
   .md\:flex-initial {
-    -ms-flex: initial;
-        flex: initial;
+    flex: 0 1 auto;
   }
 
   .md\:flex-none {
-    -ms-flex: none;
-        flex: none;
+    flex: none;
   }
 
   .md\:flex-grow {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    flex-grow: 1;
   }
 
   .md\:flex-shrink {
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
   }
 
   .md\:flex-no-grow {
-    -ms-flex-positive: 0;
-        flex-grow: 0;
+    flex-grow: 0;
   }
 
   .md\:flex-no-shrink {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
 
   .md\:float-right {
@@ -19778,191 +19535,151 @@ table {
   }
 
   .lg\:flex {
-    display: -ms-flexbox;
     display: flex;
   }
 
   .lg\:inline-flex {
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 
   .lg\:flex-row {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
 
   .lg\:flex-row-reverse {
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   .lg\:flex-col {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
 
   .lg\:flex-col-reverse {
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .lg\:flex-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .lg\:flex-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
 
   .lg\:flex-no-wrap {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .lg\:items-start {
-    -ms-flex-align: start;
-        align-items: flex-start;
+    align-items: flex-start;
   }
 
   .lg\:items-end {
-    -ms-flex-align: end;
-        align-items: flex-end;
+    align-items: flex-end;
   }
 
   .lg\:items-center {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
 
   .lg\:items-baseline {
-    -ms-flex-align: baseline;
-        align-items: baseline;
+    align-items: baseline;
   }
 
   .lg\:items-stretch {
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    align-items: stretch;
   }
 
   .lg\:self-auto {
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    align-self: auto;
   }
 
   .lg\:self-start {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 
   .lg\:self-end {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
 
   .lg\:self-center {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .lg\:self-stretch {
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .lg\:justify-start {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .lg\:justify-end {
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .lg\:justify-center {
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
 
   .lg\:justify-between {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
 
   .lg\:justify-around {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   .lg\:content-center {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
 
   .lg\:content-start {
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
   }
 
   .lg\:content-end {
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
 
   .lg\:content-between {
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    align-content: space-between;
   }
 
   .lg\:content-around {
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
 
   .lg\:flex-1 {
-    -ms-flex: 1;
-        flex: 1;
+    flex: 1 1 0%;
   }
 
   .lg\:flex-auto {
-    -ms-flex: auto;
-        flex: auto;
+    flex: 1 1 auto;
   }
 
   .lg\:flex-initial {
-    -ms-flex: initial;
-        flex: initial;
+    flex: 0 1 auto;
   }
 
   .lg\:flex-none {
-    -ms-flex: none;
-        flex: none;
+    flex: none;
   }
 
   .lg\:flex-grow {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    flex-grow: 1;
   }
 
   .lg\:flex-shrink {
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
   }
 
   .lg\:flex-no-grow {
-    -ms-flex-positive: 0;
-        flex-grow: 0;
+    flex-grow: 0;
   }
 
   .lg\:flex-no-shrink {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
 
   .lg\:float-right {
@@ -25392,191 +25109,151 @@ table {
   }
 
   .xl\:flex {
-    display: -ms-flexbox;
     display: flex;
   }
 
   .xl\:inline-flex {
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 
   .xl\:flex-row {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
 
   .xl\:flex-row-reverse {
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   .xl\:flex-col {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
 
   .xl\:flex-col-reverse {
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .xl\:flex-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .xl\:flex-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
 
   .xl\:flex-no-wrap {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .xl\:items-start {
-    -ms-flex-align: start;
-        align-items: flex-start;
+    align-items: flex-start;
   }
 
   .xl\:items-end {
-    -ms-flex-align: end;
-        align-items: flex-end;
+    align-items: flex-end;
   }
 
   .xl\:items-center {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
 
   .xl\:items-baseline {
-    -ms-flex-align: baseline;
-        align-items: baseline;
+    align-items: baseline;
   }
 
   .xl\:items-stretch {
-    -ms-flex-align: stretch;
-        align-items: stretch;
+    align-items: stretch;
   }
 
   .xl\:self-auto {
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    align-self: auto;
   }
 
   .xl\:self-start {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 
   .xl\:self-end {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
   }
 
   .xl\:self-center {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .xl\:self-stretch {
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .xl\:justify-start {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .xl\:justify-end {
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .xl\:justify-center {
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
 
   .xl\:justify-between {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
 
   .xl\:justify-around {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   .xl\:content-center {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
 
   .xl\:content-start {
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
   }
 
   .xl\:content-end {
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
   }
 
   .xl\:content-between {
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    align-content: space-between;
   }
 
   .xl\:content-around {
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
 
   .xl\:flex-1 {
-    -ms-flex: 1;
-        flex: 1;
+    flex: 1 1 0%;
   }
 
   .xl\:flex-auto {
-    -ms-flex: auto;
-        flex: auto;
+    flex: 1 1 auto;
   }
 
   .xl\:flex-initial {
-    -ms-flex: initial;
-        flex: initial;
+    flex: 0 1 auto;
   }
 
   .xl\:flex-none {
-    -ms-flex: none;
-        flex: none;
+    flex: none;
   }
 
   .xl\:flex-grow {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    flex-grow: 1;
   }
 
   .xl\:flex-shrink {
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
   }
 
   .xl\:flex-no-grow {
-    -ms-flex-positive: 0;
-        flex-grow: 0;
+    flex-grow: 0;
   }
 
   .xl\:flex-no-shrink {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
 
   .xl\:float-right {
