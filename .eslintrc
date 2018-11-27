@@ -1,6 +1,0 @@
-{
-    "extends": "eslint:recommended",
-    "rules": {
-        "no-cond-assign": ["error", "except-parens"]
-    }
-}
