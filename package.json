@@ -35,7 +35,7 @@
     "parcel-bundler": "1.12.3"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.2",
