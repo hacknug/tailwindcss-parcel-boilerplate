@@ -46,7 +46,7 @@
     "parcel-plugin-bundle-visualiser": "^1.2.0",
     "postcss-cli": "^6.1.2",
     "postcss-fontpath": "^1.0.0",
-    "posthtml-expressions": "^1.1.0",
+    "posthtml-expressions": "^1.1.1",
     "posthtml-include": "^1.2.0",
     "posthtml-load-config": "^1.0.0",
     "stylelint-config-standard": "^18.3.0",

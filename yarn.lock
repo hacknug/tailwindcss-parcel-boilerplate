@@ -2382,9 +2382,10 @@ fastparse@^1.1.1:
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
 
-fclone@^1.x:
+fclone@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/fclone/-/fclone-1.0.11.tgz#10e85da38bfea7fc599341c296ee1d77266ee640"
+  integrity sha1-EOhdo4v+p/xZk0HClu4ddyZu5kA=
 
 figures@^2.0.0:
   version "2.0.0"
@@ -4544,11 +4545,12 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.11, postcss@^7.0.14, postcss@^7.0.2
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-posthtml-expressions@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/posthtml-expressions/-/posthtml-expressions-1.1.0.tgz#1f2a64304fda8e90b5e646adcd46ddef2adae45b"
+posthtml-expressions@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/posthtml-expressions/-/posthtml-expressions-1.1.1.tgz#7663a1a5a39259dcad44b67c897c34eb420d942c"
+  integrity sha512-89Afc2rys3YCs/G+SxV3jVgWuQ/SSPujgYVIJj9raKkQjBbHn6RxmZpiJBbru/WEtVp+/s705DXCk4MfnvsJoQ==
   dependencies:
-    fclone "^1.x"
+    fclone "^1.0.11"
 
 posthtml-include@^1.2.0:
   version "1.2.0"
