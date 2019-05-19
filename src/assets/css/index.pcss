@@ -9,7 +9,7 @@
  *
  * @import "tailwindcss/preflight";
  */
-@tailwind preflight;
+@tailwind base;
 
 /**
  * This injects any component classes registered by plugins.
@@ -35,6 +35,14 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
+
+.bg-specialist {
+  background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
+}
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
