@@ -52,6 +52,6 @@
     "posthtml-include": "^1.2.0",
     "posthtml-load-config": "^1.0.0",
     "stylelint-config-standard": "^18.3.0",
-    "tailwindcss": "^1.0.5"
+    "tailwindcss": "^1.0.6"
   }
 }
