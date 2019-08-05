@@ -12,3 +12,4 @@ cache:
 script:
   - yarn install
   - yarn run build
+  - npx percy snapshot build/
