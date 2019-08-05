@@ -5,12 +5,10 @@ node_js:
   - "12"
 
 cache:
+  yarn: true
   directories:
     - node_modules
 
-before_install:
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
-
 script:
-  - pnpm install
-  - pnpm run test
+  - yarn install
+  - yarn run test
