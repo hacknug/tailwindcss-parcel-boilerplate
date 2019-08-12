@@ -1,3 +1,4 @@
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/nug-oss/tailwindcss-parcel-boilerplate)
 # tailwindcss-parcel-boilerplate
 
 This is just a couple lines of code on a bunch of files showing how to use [Parcel](https://parceljs.org/) and [TailwindCSS](https://tailwindcss.com/) together.
