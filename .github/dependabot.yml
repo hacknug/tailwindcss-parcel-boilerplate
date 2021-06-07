@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Madrid
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cssnano
+    versions:
+    - 5.0.0
+    - 5.0.1
+  - dependency-name: stylelint-config-standard
+    versions:
+    - 21.0.0
+  - dependency-name: autoprefixer
+    versions:
+    - 10.2.4
+  - dependency-name: "@fullhuman/postcss-purgecss"
+    versions:
+    - 4.0.2
