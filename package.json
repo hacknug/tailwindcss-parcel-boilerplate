@@ -31,7 +31,7 @@
     "start": "npm-run-all -s clean -p postcss:watch parcel:serve"
   },
   "devDependencies": {
-    "autoprefixer": "10.2.6",
+    "autoprefixer": "10.3.0",
     "eslint": "7.30.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.23.4",
