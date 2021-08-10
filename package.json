@@ -43,7 +43,7 @@
     "percy": "0.28.6",
     "postcss": "8.3.6",
     "postcss-cli": "8.3.1",
-    "posthtml-expressions": "1.7.1",
+    "posthtml-expressions": "1.8.0",
     "posthtml-include": "1.7.1",
     "posthtml-load-config": "2.0.0",
     "stylelint": "13.13.1",
