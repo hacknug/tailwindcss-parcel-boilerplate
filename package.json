@@ -42,7 +42,7 @@
     "parcel-plugin-bundle-visualiser": "1.2.0",
     "percy": "0.28.7",
     "postcss": "8.4.12",
-    "postcss-cli": "9.0.2",
+    "postcss-cli": "9.1.0",
     "posthtml-expressions": "1.9.0",
     "posthtml-include": "1.7.2",
     "posthtml-load-config": "2.0.0",
