@@ -44,7 +44,7 @@
     "postcss": "8.4.12",
     "postcss-cli": "9.1.0",
     "posthtml-expressions": "1.9.0",
-    "posthtml-include": "1.7.2",
+    "posthtml-include": "1.7.3",
     "posthtml-load-config": "2.0.0",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
